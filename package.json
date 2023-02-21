@@ -1,6 +1,6 @@
 {
   "name": "@deljuse/tree-core",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -9,11 +9,18 @@
     "build:esm": "tsc -p ./configs/tsconfig.esm.json && move-cli lib/esm/index.js lib/esm/index.mjs",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "prepack": "npm run build",
-    "test": "mocha"
+    "test": "mocha",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deljus/tree-core.git"
+    "url": "https://github.com/deljus/tree-core.git"
+  },
+  "release": {
+    "branches": ["main"]
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "exports": {
     ".": {
@@ -47,6 +54,7 @@
     "mocha": "^10.2.0",
     "move-cli": "^2.0.0",
     "rimraf": "^4.1.2",
+    "semantic-release": "^20.1.0",
     "ts-node": "^10.9.1",
     "uuid": "^9.0.0"
   }
