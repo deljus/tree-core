@@ -10,10 +10,11 @@
     "declaration": true,
     "declarationMap": true,
     "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "files": [
-    "./src/index.ts"
+    "./src/index.ts",
+    "./src/shared-kernel.d.ts"
   ],
   "include": [
     "./src"

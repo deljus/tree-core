@@ -17,7 +17,9 @@
     "url": "https://github.com/deljus/tree-core.git"
   },
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   },
   "publishConfig": {
     "access": "public"
@@ -46,16 +48,16 @@
   },
   "homepage": "https://github.com/deljus/tree-core#readme",
   "devDependencies": {
-    "@types/chai": "^4.3.4",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "^18.14.0",
-    "@types/uuid": "^9.0.0",
-    "chai": "^4.3.7",
-    "mocha": "^10.2.0",
-    "move-cli": "^2.0.0",
-    "rimraf": "^4.1.2",
-    "semantic-release": "^20.1.0",
-    "ts-node": "^10.9.1",
-    "uuid": "^9.0.0"
+    "@types/chai": "4.3.4",
+    "@types/mocha": "10.0.1",
+    "@types/node": "18.14.0",
+    "@types/uuid": "9.0.0",
+    "chai": "4.3.7",
+    "mocha": "10.2.0",
+    "move-cli": "2.0.0",
+    "rimraf": "4.1.2",
+    "semantic-release": "20.1.0",
+    "ts-node": "10.9.1",
+    "tsconfig-paths": "4.1.2"
   }
 }
