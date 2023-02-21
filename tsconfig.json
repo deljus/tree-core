@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -8,8 +9,16 @@
     "allowJs": true,
     "declaration": true,
     "declarationMap": true,
+    "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["../src/types/*.d.ts"]
   },
-  "files": ["../src/index.ts"]
+  "files": [
+    "./src/index.ts"
+  ],
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
 }

@@ -1,18 +1,17 @@
-///<reference path="../types/global.d.ts"/>
+import type { Profile } from './profile'
 
-enum ROLES {
+export enum ROLES {
     ADMIN,
     EDITOR,
     AUTHOR
 }
 
-interface User {
-    id: UniqueId
-    lastName: UserLastName
-    name: UserName
-    middleName: UserMiddleName
+export interface User {
+    uid: UniqueId
+    email: Email
+    isEmailConfirmed: boolean,
     role: ROLES.AUTHOR | ROLES.EDITOR | ROLES.ADMIN
-    workspace: UniqueId
+    profile: Profile
 }
 
 export function isAdmin(user: User) {
@@ -25,4 +24,8 @@ export function isEditor(user: User) {
 
 export function isAuthor(user: User) {
     return user.role === ROLES.AUTHOR
+}
+
+export function createUser(user: User) {
+    return user;
 }
