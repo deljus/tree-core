@@ -14,7 +14,7 @@ export interface UserStorageService {
 }
 
 export interface EventsService {
-    registration(data: RegistrationDate, ports: Ports): void
+    registration(data: RegistrationDate, ports: Ports): Promise<void>
 }
 
 export enum NOTIFICATION_ACTION {
