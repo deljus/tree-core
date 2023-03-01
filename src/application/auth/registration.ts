@@ -1,5 +1,5 @@
 import {UserLastName, UserMiddleName, UserName} from '../../domain/profile'
-import {NOTIFICATION_ACTION, NOTIFICATION_TYPE, Ports} from '../ports'
+import {NOTIFICATION_ACTION, Ports} from '../ports'
 import {validate, rules, ValidateSchema} from '../../lib/validate'
 import {createUser} from './createUser';
 
@@ -45,7 +45,7 @@ export async function registration(data: RegistrationDate, ports: Ports) {
     const user = await createUser(data, ports)
     await ports.userStorage.create(user);
     await ports.userStorage.checkEmail(data.email)
-    ports.notification.send(NOTIFICATION_TYPE.INFO, NOTIFICATION_ACTION.EMAIL_SEND)
+    ports.notification.send(NOTIFICATION_ACTION.EMAIL_SEND)
 }
 
 export type RegistrationDate = {

@@ -28,14 +28,8 @@ export enum NOTIFICATION_ACTION {
     WORKSPACE_NOT_FOUND
 }
 
-export enum NOTIFICATION_TYPE {
-    WARNING,
-    ERROR,
-    INFO
-}
-
 export interface NotificationService {
-    send(type: NOTIFICATION_TYPE, action: NOTIFICATION_ACTION, message?: string): void;
+    send(action: NOTIFICATION_ACTION, message?: string): void;
 }
 
 export interface Ports {

@@ -1,4 +1,4 @@
-import {NOTIFICATION_ACTION, NOTIFICATION_TYPE, Ports} from "../ports";
+import {NOTIFICATION_ACTION, Ports} from "../ports";
 import {ROLES, User} from "../../domain/user";
 import {Profile} from "../../domain/profile";
 import {RegistrationDate} from "./registration";
@@ -14,7 +14,7 @@ export function createUser({ email, workSpaceId }: RegistrationDate, ports: Port
         if(workspace) {
             workspaces.push(workspace)
         } else {
-            ports.notification.send(NOTIFICATION_TYPE.WARNING, NOTIFICATION_ACTION.WORKSPACE_NOT_FOUND)
+            ports.notification.send(NOTIFICATION_ACTION.WORKSPACE_NOT_FOUND)
         }
     }
 
