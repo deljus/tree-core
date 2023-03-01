@@ -1,8 +1,9 @@
 {
   "name": "@deljuse/tree-core",
-  "version": "0.0.2-development",
+  "version": "0.0.3-development",
   "description": "",
-  "main": "src/index.js",
+  "types": "./lib/cjs/types/index.d.ts",
+  "main": "./lib/cjs/index.js",
   "scripts": {
     "clean": "rimraf ./lib",
     "build": "npm run clean && npm run build:esm && npm run build:cjs",
