@@ -1,6 +1,6 @@
 {
   "name": "@deljuse/tree-core",
-  "version": "0.0.3-development",
+  "version": "0.0.4-development",
   "description": "",
   "types": "./lib/cjs/types/index.d.ts",
   "main": "./lib/cjs/index.js",
@@ -33,7 +33,6 @@
       },
       "require": {
         "types": "./lib/cjs/types/index.d.ts",
-        "main": "./lib/cjs/index.js",
         "default": "./lib/cjs/index.js"
       }
     }
