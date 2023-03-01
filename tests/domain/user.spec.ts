@@ -1,8 +1,8 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import { isAdmin, isAuthor, isEditor, ROLES, hasEmailConfirmed } from 'domain/user';
-import type { User } from 'domain/user';
+import { isAdmin, isAuthor, isEditor, ROLES, hasEmailConfirmed } from '../../src/domain/user';
+import type { User } from '../../src/domain/user';
 
 const replaceField = (field: keyof User, value: any): User => ({
     uid: '1',

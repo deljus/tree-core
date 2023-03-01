@@ -1,6 +1,6 @@
 import 'mocha';
 import { assert } from 'chai';
-import {rules} from 'lib/validate'
+import {rules} from '../../src/lib/validate'
 
 describe('validate rules', () => {
     it('isRequired should be true ', () => {

@@ -1,8 +1,8 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import { addWorkspace, hasContainWorkspace, removeWorkspace } from 'domain/profile';
-import type { Profile } from 'domain/profile';
+import { addWorkspace, hasContainWorkspace, removeWorkspace } from '../../src/domain/profile';
+import type { Profile } from '../../src/domain/profile';
 
 const profile = {
     uid: '1',
