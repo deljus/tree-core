@@ -31,8 +31,8 @@ export function removeWorkspace(profile: Profile, workspace: Workspace): Profile
     }
 }
 
-export function containWorkspace(profile: Profile, workspace: Workspace): boolean {
-    return profile.workspaces.some(({ uid }) => uid === workspace.uid)
+export function hasContainWorkspace(profile: Profile, workspaceId: UniqueId): boolean {
+    return profile.workspaces.some(({ uid }) => uid === workspaceId)
 }
 
 

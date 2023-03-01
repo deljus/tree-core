@@ -26,6 +26,10 @@ export function isAuthor(user: User) {
     return user.role === ROLES.AUTHOR
 }
 
+export function hasEmailConfirmed(user: User) {
+    return user.isEmailConfirmed
+}
+
 export function createUser(user: User) {
     return user;
 }
