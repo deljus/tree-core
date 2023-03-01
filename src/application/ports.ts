@@ -1,5 +1,5 @@
-import {Workspace} from "domain/workspace";
-import {User} from "domain/user";
+import {Workspace} from "../domain/workspace";
+import {User} from "../domain/user";
 import type { RegistrationDate } from './auth/registration'
 import type { LoginData } from './auth/login'
 import type { VerifyEmailCodeData } from './auth/verifyEmailCode'

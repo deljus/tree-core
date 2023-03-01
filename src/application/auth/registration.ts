@@ -1,6 +1,6 @@
-import {UserLastName, UserMiddleName, UserName} from 'domain/profile'
+import {UserLastName, UserMiddleName, UserName} from '../../domain/profile'
 import {NOTIFICATION_ACTION, NOTIFICATION_TYPE, Ports} from '../ports'
-import {validate, rules, ValidateSchema} from 'lib/validate'
+import {validate, rules, ValidateSchema} from '../../lib/validate'
 import {createUser} from './createUser';
 
 const schema: ValidateSchema = {

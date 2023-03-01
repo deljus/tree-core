@@ -1,4 +1,4 @@
-import {ValidationError} from 'lib/errors/ValidationError'
+import {ValidationError} from '../errors/ValidationError'
 export * as rules from './rules'
 
 export function validate(schema: ValidateSchema, formDataObj: FormDataObj) {

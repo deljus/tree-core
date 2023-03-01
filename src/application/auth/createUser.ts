@@ -1,6 +1,6 @@
-import {NOTIFICATION_ACTION, NOTIFICATION_TYPE, Ports} from "application/ports";
-import {ROLES, User} from "domain/user";
-import {Profile} from "domain/profile";
+import {NOTIFICATION_ACTION, NOTIFICATION_TYPE, Ports} from "../ports";
+import {ROLES, User} from "../../domain/user";
+import {Profile} from "../../domain/profile";
 import {RegistrationDate} from "./registration";
 
 function uid() {

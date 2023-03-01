@@ -1,5 +1,5 @@
 import {Ports} from "../ports";
-import {validate, ValidateSchema, rules} from "lib/validate";
+import {validate, ValidateSchema, rules} from "../../lib/validate";
 
 const schema: ValidateSchema = {
     code: [
