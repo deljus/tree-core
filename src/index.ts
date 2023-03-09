@@ -9,6 +9,7 @@ export * as tree from "./domain/tree"
 export type { User } from './domain/user'
 export type { Profile } from './domain/profile'
 export type { Workspace } from './domain/workspace'
+export type { EventsAdapterReturned } from './services/eventsAdapter'
 
 export type {
     Ports,

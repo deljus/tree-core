@@ -3,10 +3,16 @@ import {registration, RegistrationDate} from '../application/auth/registration'
 import {login, LoginData} from '../application/auth/login'
 import { verifyEmailCode, VerifyEmailCodeData } from '../application/auth/verifyEmailCode'
 
-export function eventsAdapter(ports: Ports) {
+export interface EventsAdapterReturned {
+    registration: (data: RegistrationDate) => Promise<void>;
+    login: (data: LoginData) => Promise<void>;
+    verifyEmailCode: (data: VerifyEmailCodeData) => Promise<void>
+}
+
+export function eventsAdapter(ports: Ports): EventsAdapterReturned {
     return {
-        registration: (data: RegistrationDate) => registration(data, ports),
-        login: (data: LoginData) => login(data, ports),
-        verifyEmailCode: (data: VerifyEmailCodeData) => verifyEmailCode(data, ports)
+        registration: (data) => registration(data, ports),
+        login: (data) => login(data, ports),
+        verifyEmailCode: (data) => verifyEmailCode(data, ports)
     }
 }
